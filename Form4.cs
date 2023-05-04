@@ -59,5 +59,12 @@ namespace УП_1
             descr.Text = "Введите ID аттракциона";
             correct.ShowDialog();
         }
+
+        private void Form4_Load(object sender, EventArgs e)
+        {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "amusement_parkDataSet.attractions". При необходимости она может быть перемещена или удалена.
+            this.attractionsTableAdapter.Fill(this.amusement_parkDataSet.attractions);
+
+        }
     }
 }

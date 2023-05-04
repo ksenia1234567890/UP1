@@ -62,9 +62,9 @@
             this.label5.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label5.Location = new System.Drawing.Point(211, 105);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(176, 20);
+            this.label5.Size = new System.Drawing.Size(177, 20);
             this.label5.TabIndex = 10;
-            this.label5.Text = "Добавить сотрудника";
+            this.label5.Text = "Добавить аттракцион";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
@@ -74,9 +74,9 @@
             this.label6.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label6.Location = new System.Drawing.Point(211, 156);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(168, 20);
+            this.label6.Size = new System.Drawing.Size(169, 20);
             this.label6.TabIndex = 11;
-            this.label6.Text = "Удалить сотрудника";
+            this.label6.Text = "Удалить аттракцион";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // Form1

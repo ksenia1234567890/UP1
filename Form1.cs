@@ -32,10 +32,11 @@ namespace УП_1
 
             // Закрытие первой формы и открытие второй
             
-            Close();
+            
             Form2 form2 = new Form2();
             form2.Owner=this;
             form2.Show();
+            this.Close();
         }
 
         // Удаление сотрудника

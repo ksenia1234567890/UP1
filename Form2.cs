@@ -22,8 +22,6 @@ namespace УП_1
        public string title,description;
        
 
-        
-
         // Переход к таблице в базе данных
 
         private void button3_Click(object sender, EventArgs e)

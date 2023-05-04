@@ -27,10 +27,15 @@ namespace УП_1
 
         private void button1_Click(object sender, EventArgs e)
         {
+            // Присваивание переменным - данные в БД - значений
+            
             limitations = textBox7.Text;
             safety = textBox1.Text;
             price = textBox3.Text;
             locus = textBox2.Text;
+
+
+            // Создание объекта форма 2 и присваивание переменным значений из второй формы
 
             Form2 form2 = new Form2();
             title = form2.title;
@@ -39,6 +44,8 @@ namespace УП_1
             DatabaseInsert(count, title, description, limitations, safety, price, locus);
             count++;
         }
+
+        // Метод, работающий с БД
 
         public void DatabaseInsert(int count, string title, string description, string limitations, string safety, string price, string locus)
         {
@@ -51,8 +58,8 @@ namespace УП_1
 
             // Запрос на добавление данных
 
-            NpgsqlCommand cmd = new NpgsqlCommand($"select attractions_i({count},{title},{description},{limitations},{safety},{price},{locus})");
-            if()
+            NpgsqlCommand insert_command = new NpgsqlCommand($"select attractions_i({count},{title},{description},{limitations},{safety},{price},{locus})");
+            insert_command.ExecuteNonQueryAsync();
         }
 
         // Переход к таблице в базе данных
