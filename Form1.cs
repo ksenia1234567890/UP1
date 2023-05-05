@@ -25,31 +25,26 @@ namespace УП_1
             Close();
         }
 
-        // Добавление сотрудника
+        // Добавление аттракциона
 
         private void label5_Click(object sender, EventArgs e)
         {
 
             // Закрытие первой формы и открытие второй
             
-            
             Form2 form2 = new Form2();
-            form2.Owner=this;
-            form2.Show();
-            this.Close();
+            form2.ShowDialog();
         }
 
-        // Удаление сотрудника
+        // Удаление аттракциона
 
         private void label6_Click(object sender, EventArgs e)
         {
 
             // Закрытие первой формы и открытие пятой
 
-            Close();
             Form5 form5 = new Form5();
-            form5.Owner = this;
-            form5.Show();
+            form5.ShowDialog();
         }
     }
 }

@@ -49,11 +49,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label2.Location = new System.Drawing.Point(23, 44);
+            this.label2.Location = new System.Drawing.Point(232, 53);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(567, 20);
+            this.label2.Size = new System.Drawing.Size(123, 20);
             this.label2.TabIndex = 7;
-            this.label2.Text = "Вы оказались в системе по управлению персоналом парка аттракционов";
+            this.label2.Text = "Приветствуем!";
             // 
             // label5
             // 
