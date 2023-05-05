@@ -37,8 +37,6 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.attractionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.attractionsTableAdapter = new УП_1.Amusement_parkDataSetTableAdapters.attractionsTableAdapter();
             this.attractioncodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.titleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,6 +44,8 @@
             this.safetyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.locusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.attractionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.attractionsTableAdapter = new УП_1.Amusement_parkDataSetTableAdapters.attractionsTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.staffBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.amusement_parkDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -125,15 +125,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(749, 339);
             this.dataGridView1.TabIndex = 5;
             // 
-            // attractionsBindingSource
-            // 
-            this.attractionsBindingSource.DataMember = "attractions";
-            this.attractionsBindingSource.DataSource = this.amusement_parkDataSet;
-            // 
-            // attractionsTableAdapter
-            // 
-            this.attractionsTableAdapter.ClearBeforeFill = true;
-            // 
             // attractioncodeDataGridViewTextBoxColumn
             // 
             this.attractioncodeDataGridViewTextBoxColumn.DataPropertyName = "attraction_code";
@@ -176,6 +167,15 @@
             this.locusDataGridViewTextBoxColumn.HeaderText = "locus";
             this.locusDataGridViewTextBoxColumn.Name = "locusDataGridViewTextBoxColumn";
             // 
+            // attractionsBindingSource
+            // 
+            this.attractionsBindingSource.DataMember = "attractions";
+            this.attractionsBindingSource.DataSource = this.amusement_parkDataSet;
+            // 
+            // attractionsTableAdapter
+            // 
+            this.attractionsTableAdapter.ClearBeforeFill = true;
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -188,7 +188,6 @@
             this.Controls.Add(this.button1);
             this.Name = "Form4";
             this.Text = "База данных";
-            this.Load += new System.EventHandler(this.Form4_Load);
             ((System.ComponentModel.ISupportInitialize)(this.staffBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.amusement_parkDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

@@ -32,8 +32,8 @@ namespace УП_1
 
             // Закрытие первой формы и открытие второй
             
-            Form2 form2 = new Form2();
-            form2.ShowDialog();
+            Form3 form3 = new Form3();
+            form3.ShowDialog();
         }
 
         // Удаление аттракциона
@@ -45,6 +45,17 @@ namespace УП_1
 
             Form5 form5 = new Form5();
             form5.ShowDialog();
+        }
+
+        // Переход на форму 4 - БД
+        
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+            // Закрытие первой формы и открытие четвертой
+
+            Form4 form4 = new Form4();
+            form4.ShowDialog();
         }
     }
 }

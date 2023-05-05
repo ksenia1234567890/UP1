@@ -23,15 +23,20 @@ namespace УП_1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //Создание соединения с БД
+            // Создание соединения с БД
 
             NpgsqlConnection delete_connect = new NpgsqlConnection("Host=localhost;Username=postgres;Password=cxNTVJas;Database=Amusement_park");
             delete_connect.Open();
 
+            // Преобразование ID аттракциона в числовой тип
+
             int attraction_id = int.Parse(textBox1.Text);
 
-            NpgsqlCommand delete_command = new NpgsqlCommand($"select attractions_d({attraction_id})" );
-            delete_command.Parameters.Add($"{attraction_id}", NpgsqlDbType.Numeric).Value = attraction_id;
+            // Удаление строки из БД
+
+            NpgsqlCommand delete_command = new NpgsqlCommand($"select attractions_d(@attraction_code)", delete_connect);
+            delete_command.Parameters.AddWithValue("@attraction_code", NpgsqlDbType.Numeric).Value = attraction_id;
+            delete_connect.Close();
         }
 
        
